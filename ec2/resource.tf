@@ -5,7 +5,7 @@ resource "aws_instance" "web" {
   key_name = var.key_name
   vpc_security_group_ids = [var.security_group_id]
   iam_instance_profile = var.iam_instance_profile
-  user_data = templatefile("FILE_PATH/ec2/script.sh",{
+  user_data = templatefile("PROJECT_PATH/ec2/script.sh",{
         efs_id      = var.efs_id })
   tags = {
     Name = var.instance_name
