@@ -13,3 +13,4 @@ This code creates the following resources :
 This setup will allow us to create multiple ec2 instances using the ec2 module with common efs pre-configured using shell script that runs during the provisioning of the instances.
 currently this is possible in the availability zone us-east-1d. to make it available for multiple zones within a vpc and more mount targets !!
 
+ddd
